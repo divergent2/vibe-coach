@@ -11,7 +11,7 @@ export default function LandingPage() {
           </span>
         </div>
 
-        <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
+        <h1 className="text-5xl font-black tracking-tight bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-emerald-500 bg-clip-text text-transparent forced-colors:text-indigo-600 mb-6 leading-tight">
           Vibe Coach
         </h1>
 

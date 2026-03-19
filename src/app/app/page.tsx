@@ -29,7 +29,9 @@ export default function AppPage() {
           <Link href="/" className="text-indigo-600 hover:text-indigo-700 text-sm font-medium mb-4 inline-block">
             ← Back to home
           </Link>
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Choose Your Coaching Mode</h1>
+          <h1 className="text-4xl sm:text-5xl font-black tracking-tight bg-gradient-to-r from-indigo-600 via-fuchsia-600 to-emerald-500 bg-clip-text text-transparent forced-colors:text-indigo-600 mb-4">
+            Choose Your Coaching Mode
+          </h1>
           <p className="text-lg text-gray-600">
             Select the type of coaching session you want to start.
           </p>
@@ -40,10 +42,10 @@ export default function AppPage() {
             <Link
               key={mode.id}
               href={`/app/new?mode=${mode.id}`}
-              className={`block bg-white rounded-2xl p-8 shadow-sm border-2 transition-all hover:shadow-md hover:-translate-y-1 ${
+              className={`block bg-white/70 backdrop-blur-sm rounded-2xl p-8 shadow-md border-2 transition-all duration-200 hover:shadow-xl hover:-translate-y-1.5 active:translate-y-0 ${
                 mode.color === "indigo"
-                  ? "border-indigo-100 hover:border-indigo-300"
-                  : "border-purple-100 hover:border-purple-300"
+                  ? "border-indigo-100 hover:border-indigo-300 hover:shadow-indigo-200/50"
+                  : "border-purple-100 hover:border-purple-300 hover:shadow-purple-200/50"
               }`}
             >
               <div className="text-5xl mb-5">{mode.emoji}</div>
