@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  // that's it, nothing else here!
+  // REMOVE the url property!
 }
 
 model Session {
